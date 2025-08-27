@@ -66,6 +66,9 @@ body {
   height: 1140px;
   padding: 30px;
 }
+.side-bar h6 {
+ font-family: "Inter", sans-serif;
+}
 .copyBtn {
   background-color: #fff;
   width: 182px;
