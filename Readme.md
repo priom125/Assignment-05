@@ -1,28 +1,30 @@
-What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 Ans : getElementById is access one element by using id name.
  getElementsByClassName is access one element by using class name.
  querySelector is access one element by using class name and id name both
  querySelectorAll is access all element by using class name and id name both
 
- How do you create and insert a new element into the DOM?
+2. How do you create and insert a new element into the DOM?
 
  If I want create a div then I write : const Div = document.createElement('div');
+ and then i append this parent div.
 
- What is Event Bubbling and how does it work?
+3. What is Event Bubbling and how does it work?
 
- Event bubbling is the default event propagation mechanism in the DOM. When an event, like a click, happen on an element, it first triggers on that element and then bubbles up through all of its ancestor elements in the DOM hierarchy, from the immediate parent all the way to the root html element and the window object. This process allows parent elements to react to events that happen on their children.
+ Event bubbling is the default event to go to parent element and from this parent element we can i other branches and access 
+ their children.
 
-What is Event Delegation in JavaScript? Why is it useful?
+4.What is Event Delegation in JavaScript? Why is it useful?
 
- Event delegation is a technique in JavaScript where you add a single event listener to a parent element instead of adding multiple listeners to each of its child elements. The listener on the parent then uses event bubbling to capture events from its children. here is some usefull reason
+ Event delegation is a techniqu where you add a single event listener to a parent element instead of adding multiple listeners to each of its child elements. The listener on the parent then uses event bubbling to capture events from its children. here is some usefull reason
 
 Improve Performance,Dynamic Elements,Cleaner Code
 
 
 
-What is the difference between preventDefault() and stopPropagation() methods?
+5. What is the difference between preventDefault() and stopPropagation() methods?
 
-preventDefault() stops the default action of an element from happening. The default action is the browser's built-in behavior for a specific event like form submiting
+preventDefault() stops the default action of an element from happening. example when i send a form that time this page is will refresh but preventDefault() stop this action.
 
-stopPropagation() prevents an event from bubbling. The default action of the element is not affected by this method.
+stopPropagation() prevents an event from bubbling.
